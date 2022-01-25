@@ -1,0 +1,40 @@
+> echo "1 + 1" | make compile
+2
+> echo "1 / -10" | make compile
+-1
+> echo "2 * 100 / 5" | make compile
+40
+> echo "2 * 100 / 5 ^ 2" | make compile
+8
+> echo "2 * 100 ^ 2 / 5 ^ 2" | make compile
+800
+> echo "2 * 100 % 72 ^ 2 / 5 ^ 2" | make compile
+62
+> echo "--4" | make compile
+parse error! ...
+> echo "-(-4)" | make compile
+4
+> echo "-(-4 ^ 3)" | make compile
+64
+> echo "1 / 0" | make compile
+hw1: ouch! division by zero!
+> echo "1 ^ (10 ^ 2 - 101)" | make compile
+hw1: ouch! negative exponent!
+> echo "2 ^ 2 ^ 3 ^ 4" | make compile
+16777216
+> echo "10 / 2 * 3 % 2 % 3" | make compile
+5
+> echo "10 * 7 / 3 / 3^2" | make compile
+2
+> echo "1 * (3 / -4) ^ (8 / 10)" | make compile
+1
+> echo "-(-(3 - 4))" | make compile
+-1
+> echo "1 - -10" | make compile
+11
+> echo "1 - -(-10)" | make compile
+-9
+> echo "-10 % 3" | make compile
+2
+> echo "(-10) % 3" | make compile
+2

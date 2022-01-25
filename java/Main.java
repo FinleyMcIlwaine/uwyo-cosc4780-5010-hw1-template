@@ -14,6 +14,7 @@ class Main {
         bnfc.calc.Absyn.Exp ast;
         try {
             ast = p.pExp();
+            // Evaluate here!
         } catch (IOException e) {
             System.err.println("i/o error! oh no!");
             System.exit(1);
